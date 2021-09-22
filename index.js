@@ -1,4 +1,4 @@
-var userInputYear = document.querySelector("#userInputYear").value;
+var userInputYear = document.querySelector("#userInputYear");
 var btnCheck = document.querySelector(".check");
 var outputMessage = document.querySelector(".result");
 
@@ -21,14 +21,22 @@ function isLeapYear(year) {
 
 function printResult(result) {
     if (result) {
-        return (userInputYear,"is a leap year");
+        return (userInputYear.value + " is a leap year");
     } else {
-        return (userInputYear, "is not a leap year");
+        return (userInputYear.value + " is not a leap year");
     }
 }
 
 btnCheck.addEventListener("click", function clickHandler() {
-    console.log(userInputYear);
+    console.log(userInputYear.value);
 
-    outputMessage.innerText = printResult(isLeapYear(userInputYear));
+    if(userInputYear.value != "" && userInputYear.value > 0)
+    {
+        outputMessage.innerText = printResult(isLeapYear(userInputYear.value));
+    }
+    else{
+        outputMessage.innerText = "please enter a valid input"
+    }
+
+    
 });
