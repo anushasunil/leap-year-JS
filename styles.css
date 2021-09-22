@@ -58,3 +58,45 @@ input {
     margin-bottom: 1rem;
     font-weight: bold;
 }
+
+
+footer {
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    /* padding: 2rem 1rem; */
+    text-align: center;
+    color: black;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    margin-top: 30%;
+
+}
+
+footer .link {
+    color: black;
+}
+
+footer ul {
+    padding-inline-start: 0px;
+
+}
+
+footer .link:hover {
+    text-decoration: underline;
+}
+
+.link {
+    max-width: min-content;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--primary-color);
+
+}
+
+.list-non-bullet {
+    list-style: none;
+}
+
+.list-item-inline {
+    display: inline;
+}
