@@ -30,13 +30,11 @@ function printResult(result) {
 btnCheck.addEventListener("click", function clickHandler() {
     console.log(userInputYear.value);
 
-    if(userInputYear.value != "" && userInputYear.value > 0)
-    {
+    if (userInputYear.value != "" && userInputYear.value > 0) {
         outputMessage.innerText = printResult(isLeapYear(userInputYear.value));
-    }
-    else{
+    } else {
         outputMessage.innerText = "please enter a valid input"
     }
 
-    
+
 });
